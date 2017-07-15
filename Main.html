@@ -19,7 +19,7 @@ client = new Paho.MQTT.Client("m11.cloudmqtt.com", 'Your WebSocket Port', "web_"
 
   var options = {  
     useSSL: true,
-    userName: "User Device",
+    userName: "User Device", //The security depends of your mqtt broker
     password: "Password Device",
     onSuccess:onConnect,
     onFailure:doFail
