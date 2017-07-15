@@ -1,7 +1,7 @@
 <html>
-Estado: 
+Status: 
 <div id="textD"></div>  
-<div id="Valor"></div>
+<div id="Data"></div>
 
 <script src="mqttws31.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -12,7 +12,7 @@ client = new Paho.MQTT.Client("m11.cloudmqtt.com", 'Your WebSocket Port', "web_"
  };
  
   client.onMessageArrived = function (message) {
-    var div = document.getElementById("Valor");  
+    var div = document.getElementById("Data");  
     div.textContent = message.payloadString; 
     var dataT = message.payloadString; 
  };
